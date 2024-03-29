@@ -1,0 +1,90 @@
+.navbar{
+    &-container{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+        border-bottom: 1px solid lightgrey;
+        box-shadow: 0px 3px 3px  lightgray;
+        position: fixed;
+        backdrop-filter: blur(4px);
+        background-color: hsla(0,0%,100%,.18);
+       
+    }
+    &-logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-text{
+            letter-spacing: .1rem;
+            font-weight: 700;
+            font-size: 1.35rem;
+            font-style: italic;
+            &1{
+                color: gray;
+            }
+            &2{
+                color: #313bac;
+            }
+        }
+    }
+    &-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        flex: 1 1;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem;
+        text-align: left;
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: grey;
+            font-size: 0.9rem;
+            transition: 0.5s all linear ;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                color: #313bac;
+                &::before{
+                    width: 100%;
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 3px;
+                background:#313bac ;
+                transition: 0.3s all linear;
+                bottom: -3px;
+            }
+
+        }
+
+    }
+    &-link.active{
+        a{
+            color: #313bac;
+            &::before{
+                width: 100%;
+            }
+        }
+
+    }
+}
