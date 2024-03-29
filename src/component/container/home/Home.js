@@ -5,11 +5,11 @@ import './home.scss'
 import { motion } from 'framer-motion'
 import Resume from '../../../assets/resume.pdf'
 
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
+import Instagram from '../../../assets/instagram.png'
+import LinkedIn from '../../../assets/linkedin.png'
 import Codepen from '../../../assets/codepen.png'
+import Email from '../../../assets/email.png'
+import GitHub from '../../../assets/github.png'
 import BackHandIcon from '@mui/icons-material/BackHand';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
@@ -88,27 +88,27 @@ const SocialMedia = () =>{
           href='https://www.instagram.com/_sethu.14_?utm_source=qr&igsh=MTQ2djRudjk3eHBpYw%3D%3D'
           target='blank'
         >
-          <InstagramIcon/>
+          <img src={Instagram} alt='not-found'/>
         </a>
         <a 
           className='social-media-icon github'
           href='https://github.com/SethuVenkatesh'
           target='blank'
         >
-          <GitHubIcon/>
+          <img src={GitHub} alt='not-found'/>
         </a>
         <a 
           className='social-media-icon linkedin'
           href='https://www.linkedin.com/in/sethu-venkatesh-m-b9b71a216/'
           target='blank'
         >
-          <LinkedInIcon/>
+          <img src={LinkedIn} alt='not-found'/>
         </a>
         <a 
           className='social-media-icon email'
           href='mailto:sethuvenkateshvk@gmail.com'
         >
-         <EmailIcon/>
+         <img src={Email} alt='not-found'/>
         </a>
         <a
           className='social-media-icon codepen'
