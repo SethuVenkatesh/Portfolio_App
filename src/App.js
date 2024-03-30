@@ -16,6 +16,33 @@ function App() {
   setActiveTab(tabName)
 }
 
+  useEffect(()=>{
+
+    const handleScroll = () =>{
+      const scrollPosition = window.scrollY;
+      const homeSection = document.getElementById("home").offsetTop;
+      const aboutSection = document.getElementById("about").offsetTop;
+      const workSection = document.getElementById("work").offsetTop;
+      const contactSection = document.getElementById("contact").offsetTop;
+      if(scrollPosition < aboutSection){
+        setActiveTab("home");
+      }
+      else if(scrollPosition >= aboutSection && scrollPosition <=workSection){
+        setActiveTab("about");
+      }
+      else if(scrollPosition >= workSection && scrollPosition <=contactSection){
+        setActiveTab("work");
+      }else{
+        setActiveTab("contact")
+      }
+    }
+    window.addEventListener("scroll",handleScroll);
+    return () =>{
+      window.removeEventListener("scroll",handleScroll);
+    }
+
+  },[])
+
   return (
     <div className="app">
       <Navbar tabs={tabs} activeTab={activeTab} handleTabChange={handleTabChange}/>
