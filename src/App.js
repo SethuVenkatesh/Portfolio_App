@@ -19,11 +19,14 @@ function App() {
   useEffect(()=>{
 
     const handleScroll = () =>{
-      const scrollPosition = window.scrollY;
-      const homeSection = document.getElementById("home").offsetTop;
-      const aboutSection = document.getElementById("about").offsetTop;
-      const workSection = document.getElementById("work").offsetTop;
+      const scrollPosition = window.scrollY + 10;
+      const homeSection = document.getElementById("home").offsetTop ;
+      const aboutSection = document.getElementById("about").offsetTop ;
+      const workSection = document.getElementById("work").offsetTop ;
       const contactSection = document.getElementById("contact").offsetTop;
+
+      console.log("scroll ",scrollPosition);
+      console.log(homeSection,aboutSection,workSection,contactSection)
       if(scrollPosition < aboutSection){
         setActiveTab("home");
       }
