@@ -25,6 +25,12 @@ const Work = () => {
       codeLink: "https://github.com/SethuVenkatesh/BloodBankFinal",
     },
     {
+      title: "Billing Application",
+      description: "For Invoice Creation and Tracking Sales",
+      imgurl: images.billingApp,
+      codeLink: "https://github.com/SethuVenkatesh/BillingApp",
+    },
+    {
       title: "Whatsapp Clone - Web app",
       description: "For end to end communication",
       imgurl: images.whatsapp,

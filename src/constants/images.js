@@ -13,6 +13,8 @@ import irctc from '../assets/irctc.png'
 import pdfconverter from '../assets/pdfconverter.png'
 import bloodbank from '../assets/bloodbank.jpg'
 import whatsapp from '../assets/whatsapp.png'
+import billingApp from '../assets/billingApp.jpg'
+
 
 
 const images = {
@@ -30,6 +32,7 @@ const images = {
     irctc,
     pdfconverter,
     bloodbank,
-    whatsapp
+    whatsapp,
+    billingApp
 }
 export default images;

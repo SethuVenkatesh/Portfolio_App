@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileImage from '../../../assets/ProfileImage.png'
+import ProfileImage from '../../../assets/ProfileImage1.png'
 import ProfileOverlay from '../../../assets/ProfileOverlay.jpg'
 import './home.scss'
 import { motion } from 'framer-motion'
