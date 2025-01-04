@@ -63,7 +63,7 @@ const BasicInfo = () =>{
 
   return (
     <div className='basic-info-container'>
-        <p className='basic-info-text'>Practise like you never won perform like you never lose!</p>
+        <p className='basic-info-text'>Practice like you never won perform like you never lose!</p>
         <div className='basic-info-buttons'>
           <div className='basic-info-button'>
             <BackHandIcon/>
